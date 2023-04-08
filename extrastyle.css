@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Welland', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
   }
   
@@ -13,8 +13,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    /*position: relative;*/
   }
-
   .container a {
     position: absolute;
     top: 0;
@@ -69,16 +69,6 @@
     bottom: -325px;
   }
 
-  #d6{
-    left: -230px;
-    bottom: -325px;
-  }
-
-  #image{
-    left: -230px;
-    bottom: -100px;
-  }
-
   .img-box:nth-child(2){
     background: url(images/social-life.jpeg);
     background-size: cover;
@@ -108,13 +98,6 @@
     bottom: 0;
   }
 
-  .img-box:nth-child(6){
-    background: url(images/prince-icon.png);
-    background-size: cover;
-    background-position: center;
-    bottom: 0;
-  }
-
   .img-box p{
     color: #ffff;
     font-size: 80%;
@@ -122,10 +105,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    /*center text*/
-    top: 50%;
-    left: 50%;
-    transform:translate(-50% , -50%);
+    bottom: 5px;
+    left: 100px;
     opacity: 0;
     transition: bottom 0.5s, opacity 0.5s;
   }
@@ -137,5 +118,13 @@
 
   .img-box:hover p{
     font-size: 80%;
+    bottom: 5px;
+    left: 100px;
+    /*top: 0;
+    bottom: 0;
+    left: 50;*/
     opacity: 1;
+    
+    /*justify-content: center;
+    align-items: center;*/
   }
